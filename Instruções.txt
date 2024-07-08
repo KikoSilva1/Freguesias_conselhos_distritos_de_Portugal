@@ -1,0 +1,50 @@
+1-  As tabelas têm de ter o id como PK e AUTO_INCREMENT, definir desta forma: "id INT AUTO_INCREMENT PRIMARY KEY,"
+    Garantir que os nomes das tabelas escritos no código python estão de acordo com o nomes definidos na base de dados
+2- Verificar se estas configurações estão iguais à do projeto:
+
+    mysql_config = {
+    'host': 'localhost',
+    'user': 'root',
+    'password': '',
+    'database': 'your_database'
+     }
+
+    Open your web browser and go to http://localhost/phpmyadmin.
+    Log in with the MySQL username and password (if set).
+    Click on the "User accounts" tab to view or modify user details.
+    The 'Host', 'User', 'Password', and 'Database' columns in the user accounts table will show you this information.
+
+ 3- Instalar Python 
+
+    Windows:
+
+    Baixe o instalador do Python no site oficial: Python Downloads.
+    Execute o instalador e marque a opção "Add Python to PATH" durante a instalação.
+    Clique em "Install Now" e aguarde a conclusão da instalação.
+ 
+5 - Instalação da Extensão Python do VSCode:
+
+    Abra o Visual Studio Code (VSCode).
+    Vá até a aba de Extensões:
+    Você pode clicar no ícone de quadrado na barra lateral esquerda ou usar o atalho Ctrl + Shift + X (Windows/Linux) ou Cmd + Shift + X (macOS).
+    Pesquise por "Python" na barra de pesquisa.
+    Encontre a extensão "Python" desenvolvida pela Microsoft.
+    Clique em "Install" para instalar a extensão.
+
+6 - Instalar as Dependencias necessárias (biblioteca de conexão do python ao MYSQL) que estão no requirements.text:
+    garantir que está no dirétorio correto:
+         escrever no terminal VScode : cd caminho/para/o/diretorio/do/script 
+    escrever no terminal: 
+    pip install -r requirements.txt
+
+7 - Execute o Script:
+
+    garantir que está no dirétorio correto:
+         escrever no terminal VScode : cd caminho/para/o/diretorio/do/script 
+
+
+
+    já estando com o caminho especificado no terminal na pasta Database_filler escrever o seguinte:
+
+    python script.py
+
